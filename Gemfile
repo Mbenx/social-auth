@@ -43,6 +43,8 @@ gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
 gem 'activerecord-session_store', '~> 1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Development ENV Variables
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,7 +52,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
-  gem 'dotenv', '~> 2.2.1'
+  # gem 'dotenv', '~> 2.2.1'
 end
 
 group :development do
